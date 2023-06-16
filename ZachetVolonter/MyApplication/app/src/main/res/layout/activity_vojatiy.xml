@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мои события"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FF4081"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnPlannedEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#FF4081"
+        android:text="Запланированные мероприятия"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPlannedEvents1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#FF4081"
+        android:onClick="onClickSignIn"
+        android:text="Мой рейтинг"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPlannedEvents2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать профиль"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF4081"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnPlannedEvents3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подробная информация о мероприятии"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF4081"
+        android:layout_marginBottom="260dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Значок человека"
+            android:src="@drawable/user_icon" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/education_icon"
+            android:contentDescription="Значок с учебной шапочкой" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/settings_icon"
+            android:contentDescription="Значок шестеренки"
+            android:onClick="openSettingsActivity" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

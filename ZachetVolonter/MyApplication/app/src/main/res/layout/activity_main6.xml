@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать профиль"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FF4081"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_rounded"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Подразделение"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_rounded"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etEmployeeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Идентификатор сотрудника"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_rounded"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить на модерацию"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF4081" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_employee_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите идентификатор сотрудника"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
+
+    <!-- Добавлено новое поле ввода -->
+    <EditText
+        android:id="@+id/edit_text_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите подразделение"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_employee_id" />
+
+    <!-- Остальные элементы UI остаются без изменений -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="onClickSignIn"
+        android:text="Зарегистрироваться"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_department"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_department"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_department" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
